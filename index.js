@@ -1,17 +1,17 @@
-// console.log("Franklin Makokha!");
-
-// Lesson 2
 var readlineSync = require('readline-sync');
-var firstName = readlineSync.question('What is first your name:');
-var lastName = readlineSync.question('What is last your name:');
-var fullName = firstName + lastName
+// Input
+var userAge = readlineSync.question("How old are you?");
 
-console.log('Oh Hi '+fullName);
+console.log("You are "+ userAge +" Years old.");
+// Processing
+if (userAge == 25){
+  // Output
+  console.log("You are eligible for the Prize");
+}else{
+  // Output
+  console.log("You are not eligible");
+}
 
-// var ageNumber = readlineSync.question('What is your age:', {
-//   hideEchoBack:true //Hides what your input
-// });
-// console.log('Oh Hi '+userName+' so you are '+ageNumber+' years old');
-// console.log("Franklin Welcome to Repl.it");
+// I stopped at 34:49
 
 
