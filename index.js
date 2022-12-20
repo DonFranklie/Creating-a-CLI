@@ -1,23 +1,27 @@
 var readlineSync = require('readline-sync');
-var score = readlineSync.question('What is your Score? ');
 
+function add(parameter1, parameter2) {
+  console.log("First param", parameter1, "Second param", parameter2);
+  var sum = parameter1 + parameter2;
 
-if(score >= 70){
-  console.log('Grade A');
-}
-else if(score >= 60){
-  console.log('Grade B');
-}
-else if(score >= 50){
-  console.log('Grade C');
-}
-else if(score >= 40){
-  console.log('Grade D');
-}
-else{
-  console.log('Fail');
+  return sum;
 }
 
-// I stopped at 34:49
+var result = add(6, 7);
+console.log("The result is: " + result);
+
+function add(parameter1, parameter2) {
+  console.log("First param", parameter1, "Second param", parameter2);
+  var firstResult = parameter1 * parameter2;
+  var sum = parameter1 + parameter2;
+  var finalResult = sum + firstResult;
+  return finalResult;
+}
+
+
+
+
+
+// I stopped at 34: 49
 
 
