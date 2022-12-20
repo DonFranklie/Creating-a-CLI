@@ -1,15 +1,21 @@
 var readlineSync = require('readline-sync');
-// Input
-var userAge = readlineSync.question("How old are you?");
+var score = readlineSync.question('What is your Score? ');
 
-console.log("You are "+ userAge +" Years old.");
-// Processing
-if (userAge == 25){
-  // Output
-  console.log("You are eligible for the Prize");
-}else{
-  // Output
-  console.log("You are not eligible");
+
+if(score >= 70){
+  console.log('Grade A');
+}
+else if(score >= 60){
+  console.log('Grade B');
+}
+else if(score >= 50){
+  console.log('Grade C');
+}
+else if(score >= 40){
+  console.log('Grade D');
+}
+else{
+  console.log('Fail');
 }
 
 // I stopped at 34:49
