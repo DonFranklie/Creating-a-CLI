@@ -1,27 +1,15 @@
 var readlineSync = require('readline-sync');
 
-function add(parameter1, parameter2) {
-  console.log("First param", parameter1, "Second param", parameter2);
+function add(parameter1, parameter2){
   var sum = parameter1 + parameter2;
-
   return sum;
 }
 
-var result = add(6, 7);
-console.log("The result is: " + result);
+var result = add(4,5);
 
-function add(parameter1, parameter2) {
-  console.log("First param", parameter1, "Second param", parameter2);
-  var firstResult = parameter1 * parameter2;
-  var sum = parameter1 + parameter2;
-  var finalResult = sum + firstResult;
-  return finalResult;
-}
+console.log(result);
 
 
-
-
-
-// I stopped at 34: 49
+// I am at 1:08:06
 
 
