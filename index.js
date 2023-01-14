@@ -1,12 +1,14 @@
-//How to convert array of strings to uppercase
+//Some Array methods
 
 let currencies = ['dollar', 'ruble', 'pound', 'euro'];
 
-function toUpper(anArray){
-  let toUppercase = anArray.map(element=>element.toUpperCase());
 
-  console.log(toUppercase);
-}
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let result = fruits.fill("Kiwi");
 
-toUpper(currencies);
+console.log(result);
 
+let constracta = currencies.constructor;
+console.log(constracta);
+
+// I can remember join(), map(), concat(), indexOf() etc
