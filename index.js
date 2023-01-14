@@ -1,15 +1,12 @@
-var readlineSync = require('readline-sync');
+//How to convert array of strings to uppercase
 
-function add(parameter1, parameter2){
-  var sum = parameter1 + parameter2;
-  return sum;
+let currencies = ['dollar', 'ruble', 'pound', 'euro'];
+
+function toUpper(anArray){
+  let toUppercase = anArray.map(element=>element.toUpperCase());
+
+  console.log(toUppercase);
 }
 
-var result = add(4,5);
-
-console.log(result);
-
-
-// I am at 1:08:06
-
+toUpper(currencies);
 
